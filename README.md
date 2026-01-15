@@ -1,4 +1,4 @@
-# Custom 16-Bit CPU: Logisim Microarchitecture
+# Custom 16-Bit CPU:
 
 ### *Computer Organization & Systems Programming (CSEN402) - Milestone 2*
 
