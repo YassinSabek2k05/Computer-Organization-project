@@ -1,4 +1,4 @@
-# Custom 8-Bit CPU: Logisim Microarchitecture
+# Custom 16-Bit CPU: Logisim Microarchitecture
 
 ### *Computer Organization & Systems Programming (CSEN402) - Milestone 2*
 
@@ -20,16 +20,6 @@ for(i=0; i<3; i++) {
 ```
 
 This required implementing a control unit capable of managing timing signals () for a specific subset of instructions, including a custom **Multiply (MUL)** operation.
-
----
-
-## Hardware Specifications
-
-* **Word Size:** 16-bit instructions.
-* **Address Space:** 7-bit Address Field (Bits 0-6).
-* **Opcode:** 3-bit Opcode (Bits 12-14).
-* **Control Unit:** Hardwired logic using a Sequence Counter (SC), 3-to-8 Decoders, and logic gates.
-* **Synchronous Design:** Implemented Flip-Flops on `CLR` signals for registers to ensure synchronous clearing, overriding Logisim's default asynchronous behavior.
 
 ---
 
@@ -68,10 +58,4 @@ LOP, LDA A   / Load A into Accumulator
      HLT     / Terminate
 
 ```
-
-
-### Key Implementation Detail: The MUL Instruction
-
-For this milestone, I repurposed the `BSA` opcode to implement **`MUL`**. This required extending the ALU logic to handle multiplication and ensuring the Bus Selection signals () correctly routed the Data Register to the ALU during .
-
 ---
